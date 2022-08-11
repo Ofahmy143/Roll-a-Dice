@@ -1,3 +1,13 @@
+var player1 = prompt("First Player's name: ");
+var player2 = prompt("second Player's name: ");
+
+document.querySelector("#firstPlayer").textContent = player1;
+document.querySelector("#secondPlayer").textContent = player2;
+
+
+
+
+
 var randomNumber1 = Math.floor(Math.random()*6)+1;
 var randomNumber2 = Math.floor(Math.random()*6)+1;
 
@@ -47,21 +57,18 @@ switch(randomNumber2){
 if(randomNumber1 > randomNumber2){
     // alert("Player 1 wins");
     document.querySelector("#firstPlayer").classList.add("winner");
-    document.querySelector("#winnerDisplay").classList.add("winner");
-    document.querySelector("#winnerDisplay").textContent = "Player 1 is the winner";
+    document.querySelector("#winnerDisplay").textContent = player1+ " is the winner";
 }else if(randomNumber1 === randomNumber2){
     // alert("Draw");
     document.querySelector("#secondPlayer").classList.add("winner");
     document.querySelector("#firstPlayer").classList.add("winner");
-    document.querySelector("#winnerDisplay").classList.add("winner");
     document.querySelector("#winnerDisplay").textContent = "It's a Draw";
 
 
 }else{
     // alert("Player 2 wins");
     document.querySelector("#secondPlayer").classList.add("winner");
-    document.querySelector("#winnerDisplay").classList.add("winner");
-    document.querySelector("#winnerDisplay").textContent = "Player 2 is the winner";
+    document.querySelector("#winnerDisplay").textContent = player2+" is the winner";
 
 
 }
