@@ -47,3 +47,14 @@ body{
     font-family: Lobster;
     color: white;
 }
+
+.winner{
+    color: gold;
+}
+
+#winnerDisplay{
+    text-align: center;
+    font-family: Lobster;
+    font-size: 4em;
+    color:gold;
+}
