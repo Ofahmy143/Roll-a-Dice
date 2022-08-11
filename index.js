@@ -44,11 +44,24 @@ switch(randomNumber2){
         break;
 }
 
-// if(randomNumber1 > randomNumber2){
-//     alert("Player 1 wins");
-// }else if(randomNumber1 === randomNumber2){
-//     alert("Draw");
-// }else{
-//     alert("Player 2 wins");
+if(randomNumber1 > randomNumber2){
+    // alert("Player 1 wins");
+    document.querySelector("#firstPlayer").classList.add("winner");
+    document.querySelector("#winnerDisplay").classList.add("winner");
+    document.querySelector("#winnerDisplay").textContent = "Player 1 is the winner";
+}else if(randomNumber1 === randomNumber2){
+    // alert("Draw");
+    document.querySelector("#secondPlayer").classList.add("winner");
+    document.querySelector("#firstPlayer").classList.add("winner");
+    document.querySelector("#winnerDisplay").classList.add("winner");
+    document.querySelector("#winnerDisplay").textContent = "It's a Draw";
 
-// }
+
+}else{
+    // alert("Player 2 wins");
+    document.querySelector("#secondPlayer").classList.add("winner");
+    document.querySelector("#winnerDisplay").classList.add("winner");
+    document.querySelector("#winnerDisplay").textContent = "Player 2 is the winner";
+
+
+}
