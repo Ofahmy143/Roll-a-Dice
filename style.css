@@ -14,3 +14,36 @@ body{
     text-align: center;
     
 }
+
+/* .playerNames{
+    border: solid;
+    border-color: black;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+} */
+
+.imgs{
+    border: solid;
+    border-color: black;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    
+}
+
+#playerBox{
+    border: solid;
+    border-color: violet;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 17%;
+    font-size: 3em;
+    font-family: Lobster;
+    color: white;
+}
