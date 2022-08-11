@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Lobster;
+    src: url(Lobster-Regular.ttf);
+}
+body{
+    background-color: darkslategrey;
+}
+
+#mainHeader{
+    color: white;
+    font-family: Lobster;
+    font-style: italic;
+    font-size: 6em;
+    text-align: center;
+    
+}
